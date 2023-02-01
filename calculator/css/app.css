@@ -1,0 +1,57 @@
+/************************************************
+ * @summary:        Calculator
+ * @file:           app.css
+ * @version:        1.00
+ * @author:         Attila Ódry
+ * @license:        MIT
+ * @copyright:      © 2021-2022 KERI Informatics
+ * @description:    
+*************************************************/
+table *:not(input:enabled) {
+    user-select: none !important;
+    outline-style: none !important;
+}
+td {
+    height: 80px;
+    width: 120px;
+    min-width: 120px;
+}
+/* Firefox */
+td[rowspan="2"] > button {
+    height: 144px !important;
+}
+.btn-outline-danger.btn-hover {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+.btn-outline-warning.btn-hover {
+    color: #000;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+.btn-outline-secondary.btn-hover {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+.btn-outline-success.btn-hover {
+    color: #fff;
+    background-color: #198754;
+    border-color: #198754;
+}
+.buttonClickEffect {
+	-webkit-animation:buttonClickEffect 40ms;
+			animation:buttonClickEffect 40ms;
+}
+
+@-webkit-keyframes buttonClickEffect {
+      0% 	{-webkit-transform:none;}
+	 50% 	{-webkit-transform:scale(0.9);}
+	100% 	{-webkit-transform:none;}
+}
+@keyframes buttonClickEffect {
+	  0% 	{transform:none;}
+	 50% 	{transform:scale(0.9);}
+	100% 	{transform:none;}
+}
