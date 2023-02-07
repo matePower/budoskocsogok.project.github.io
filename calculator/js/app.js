@@ -23,10 +23,10 @@ display.value = "0";
  * @param {Element} element button element clicked
  * @returns 
  */
-function clicked(element) {
+function clicked(eleme, false) {
 
 	// Get key value 
-	let key = element.innerText;
+	let key = element.innerHtml;
 
 	// When is wrong result, then allow only clear icon
 	if ((display.value === 'Infinity' ||
